@@ -1,0 +1,186 @@
+/* IMPORT */
+
+@import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap");
+
+/* RESET */
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+img {
+  display: block;
+}
+
+ul {
+  list-style: none;
+}
+
+/* MOBILE GENERAL STYLES */
+
+html {
+  font-family: "inter", sans-serif;
+  font-size: 1rem;
+  line-height: 1.5;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  scroll-behavior: smooth;
+}
+
+body {
+  background-color: #141414;
+  color: #fff;
+  width: 100%;
+  position: relative;
+}
+
+.container {
+  width: min(87%, 400px);
+  background-color: #1f1f1f;
+  height: max(72vh, auto);
+  flex-direction: column;
+  border-radius: 14px;
+  text-align: center;
+  margin: 1.5rem auto;
+  padding: 0.1rem 0 1rem;
+}
+
+.header__avatar {
+  border-radius: 50%;
+  width: 88px;
+  height: auto;
+  margin: 1.5rem auto;
+}
+
+.header__title {
+  font-size: 1.5rem;
+  letter-spacing: 1px;
+  font-weight: 450;
+  margin: 0 0 0.25rem;
+}
+
+.location {
+  font-size: 0.9rem;
+  font-weight: 450;
+  color: #c5f82a;
+  margin: 0 0 1.4rem;
+}
+
+p {
+  font-size: 14px;
+  color: #fffb;
+  margin: 0 0 1.2rem;
+}
+
+ul {
+  width: 100%;
+}
+
+ul li a {
+  display: inline-block;
+  width: 85%;
+  background-color: #333;
+  padding: 0.7rem;
+  margin: 0.5rem;
+  border-radius: 8px;
+  font-size: 0.9rem;
+}
+
+a:active,
+a:visited {
+  background-color: #333;
+  color: #fff;
+}
+
+a:hover {
+  background-color: #c5f82a;
+  color: #141414;
+}
+
+/* FOOTER STYLES */
+
+.attribution {
+  font-size: 11px;
+  text-align: center;
+  bottom: -1rem;
+  position: absolute;
+  width: 100%;
+  margin: 0 auto;
+}
+
+.attribution a {
+  text-decoration: underline;
+  color: hsl(0, 0%, 100%);
+}
+
+.attribution a:hover {
+  color: #fff8;
+  background: none;
+  text-decoration: underline;
+}
+
+/* TABLET STYLES */
+
+@media screen and (min-width: 768px) {
+  body {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .container {
+    width: min(50%, 400px);
+    height: min(50vh, auto);
+  }
+
+  .attribution {
+    bottom: 1rem;
+  }
+}
+
+/* DESKTOP STYLES */
+
+@media screen and (min-width: 1024px) {
+  html {
+    background-color: #0e0e0e;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  body {
+    background-color: #141414;
+    color: #fff;
+    width: 80%;
+    height: 80vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .container {
+    width: 26.5%;
+    padding: 0.75rem;
+    height: max(70%, auto);
+    border-radius: 10px;
+    margin: 1.5rem auto;
+    padding-bottom: 2rem;
+  }
+
+  .header__avatar {
+    width: 90px;
+    height: auto;
+  }
+}
