@@ -51,6 +51,7 @@ To see how you can add code snippets, see below:
 .container {
   width: min(87%, 400px);
 }
+```
 
 ### Useful resources
 
